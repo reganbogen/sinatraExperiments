@@ -28,5 +28,5 @@ end
 
 #{"title"=>"My title", "content"=>"My content"}
 post "/create" do
-  params.inspect
+  save_content(params["title"], params["content"])
 end
