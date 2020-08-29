@@ -26,6 +26,7 @@ get "/:title" do
   erb :show
 end
 
+#{"title"=>"My title", "content"=>"My content"}
 post "/create" do
   params.inspect
 end
