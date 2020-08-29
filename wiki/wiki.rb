@@ -27,5 +27,5 @@ get "/:title" do
 end
 
 post "/create" do
-  'hello from the post "/create" route!'
+  params.inspect
 end
