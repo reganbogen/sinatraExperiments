@@ -17,6 +17,10 @@ def delete_content(title)
   File.delete("pages/#{title}.txt")
 end
 
+def h(string)
+  Rack::Utils.escape_html(string)git 
+end
+
 get "/" do
   erb :welcome
 end
