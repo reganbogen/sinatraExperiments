@@ -22,7 +22,7 @@ get "/" do
 end
 
 get "/new" do
-  erb :new
+  erb :new, layout: :page
 end
 
 get "/:title" do
